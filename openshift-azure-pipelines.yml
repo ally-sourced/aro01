@@ -11,8 +11,8 @@ variables:
   project-name-uat: 'opticca-uat'
   image-repository-dev: 'arotourcr01'
   image-repository-uat: 'arotourcr01'
-  development-cfg-dev: 'arotourcr01'
-  development-cfg-uat: 'arotourcr01'
+  development-cfg-dev: 'dc-opticca-dev'
+  development-cfg-uat: 'dc-opticca-uat'
   container-name-dev: 'arotourcr01'
   container-name-uat: 'arotourcr01'
 
