@@ -15,7 +15,7 @@ variables:
   development-cfg-uat: 'dc-opticca-uat'
   container-name-dev: 'arotourcr01'
   container-name-uat: 'arotourcr01'
-  registry: 'arotourcr01.azurecr.io'
+  registry: 'arotourcr01.azurecr.io/opticca-dev'
 
 stages: 
 - stage: Build
