@@ -15,6 +15,7 @@ variables:
   development-cfg-uat: 'dc-opticca-uat'
   container-name-dev: 'arotourcr01'
   container-name-uat: 'arotourcr01'
+  registry: 'arotourcr01.azurecr.io'
 
 stages: 
 - stage: Build
@@ -83,7 +84,7 @@ stages:
       inputs:
         connectionType: 'OpenShift Connection Service'
         openshiftService: 'openshift-service-connection'
-        cmd: 'oc set triggers dc/$(development-cfg-dev) --from-image=$(project-name-dev)/$(image-repository-dev):$(tag) -c $(container-name-dev)'
+        cmd: 'oc set triggers dc/$(development-cfg-dev) --from-image=$(registry)/$(image-repository-dev):$(tag) -c $(container-name-dev)'
         uselocalOc: true
 
 - stage: UAT 
