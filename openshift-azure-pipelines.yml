@@ -13,8 +13,8 @@ variables:
   image-repository-uat: 'arotourcr01'
   development-cfg-dev: 'sample-dev'
   development-cfg-uat: 'sample-uat'
-  container-name-dev: 'sample-dev'
-  container-name-uat: 'sample-uat'
+  container-name-dev: 'arotourcr01'
+  container-name-uat: 'arotourcr01'
 
 stages: 
 - stage: Build
